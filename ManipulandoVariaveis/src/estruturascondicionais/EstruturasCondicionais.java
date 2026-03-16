@@ -11,6 +11,8 @@ public class EstruturasCondicionais {
 
         Scanner sc = new Scanner(System.in);// importante para receber informações do teclado
 
+
+
 //        System.out.println("Digite sua idade");
 //        int idade = scanner.nextInt();
 //        //if, else, if else
@@ -59,25 +61,44 @@ public class EstruturasCondicionais {
 //        }
 
         //comparação com equals
+//
+//        String palavra = "Sucesso";
+//
+//        if (palavra.equals("Sucesso")){  //equals é um metodo da função String, que compara dados dentro de variaveis
+//            System.out.println("É isso meeesmo!!!");
+//        }else{
+//            System.out.println("NADA DIISSO!");
+//        }
+//
+//        //Condição Ternaria
+//        System.out.println("Digite SENHA");
+//        String senha = sc.next();
+//
+//
+//        String retorno = senha.equals("SENHA") ? "Senha correta!" : "Senha Incorreta";
+//
+//        System.out.println(retorno);
 
-        String palavra = "Sucesso";
-
-        if (palavra.equals("Sucesso")){  //equals é um metodo da função String, que compara dados dentro de variaveis
-            System.out.println("É isso meeesmo!!!");
-        }else{
-            System.out.println("NADA DIISSO!");
-        }
-
-        //Condição Ternaria
-        System.out.println("Digite SENHA");
-        String senha = sc.next();
 
 
-        String retorno = senha.equals("SENHA") ? "Senha correta!" : "Senha Incorreta";
 
-        System.out.println(retorno);
+        //Forma de parar o laço de repetição
+//        while(true){   //Declara condição do while como true
+//
+//            System.out.println("Digite 0 para sair: ");
+//            int p = sc.nextInt();
+//
+//            if(p==0){
+//                break; //interrompe o laço com o break
+//            }
+//
+//        }
+
+
 
     }
+
+
 
 
 }
