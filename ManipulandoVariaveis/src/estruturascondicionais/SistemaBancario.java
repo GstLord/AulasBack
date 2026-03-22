@@ -107,7 +107,7 @@ public class SistemaBancario {
 
                     break;
 
-            }
+            }// teste de commit
         } while (opcao != 0);
     }
 
