@@ -7,7 +7,7 @@ public class EstruturasCondicionais {
     //==(igual a), !=(diferente de)
     //&&(e), ||(ou)
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);// importante para receber informações do teclado
 
@@ -60,24 +60,34 @@ public class EstruturasCondicionais {
 
         //comparação com equals
 
-        String palavra = "Sucesso";
+//        String palavra = "Sucesso";
+//
+//        if (palavra.equals("Sucesso")){  //equals é um metodo da função String, que compara dados dentro de variaveis
+//            System.out.println("É isso meeesmo!!!");
+//        }else{
+//            System.out.println("NADA DIISSO!");
+//        }
+//
+//        //Condição Ternaria
+//        System.out.println("Digite SENHA");
+//        String senha = sc.next();
+//
+//
+//        String retorno = senha.equals("SENHA") ? "Senha correta!" : "Senha Incorreta";
+//
+//        System.out.println(retorno);
+//
+//    }
 
-        if (palavra.equals("Sucesso")){  //equals é um metodo da função String, que compara dados dentro de variaveis
-            System.out.println("É isso meeesmo!!!");
-        }else{
-            System.out.println("NADA DIISSO!");
-        }
-
-        //Condição Ternaria
-        System.out.println("Digite SENHA");
-        String senha = sc.next();
-
-
-        String retorno = senha.equals("SENHA") ? "Senha correta!" : "Senha Incorreta";
-
-        System.out.println(retorno);
-
-    }
-
-
+//        //PARA VALIDAR ENTRADA / TRATAMENTO DE EXCEÇÕES
+//        System.out.println("Digite um Numero: \n");
+//        while (!sc.hasNextInt()) {  //harNextInt() serve para validar a entrada que o usuário digitou
+//            System.out.println("Entrada inválida. Por favor digite um numero: ");
+//                sc.next(); //Limpa entrada inválida
+//
+//        }
+//        int numero = sc.nextInt();
+//
+//
+//    }
 }
