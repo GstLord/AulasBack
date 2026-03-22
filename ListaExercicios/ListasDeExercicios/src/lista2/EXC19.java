@@ -14,8 +14,6 @@ public class EXC19 {
         System.out.println("Informe sua Pressão Arterial Sistólica(PAS)");
         double pas = sc.nextDouble();
 
-        //Meu codigo
-
         if (pad < 85 && pas < 130){
             System.out.println("Pressão arterial normal");
         } else if ((pad >= 85 && pad <= 89) || (pas >= 130 && pas <= 139)) {
@@ -28,25 +26,6 @@ public class EXC19 {
             System.out.println("Hípertensão grave(Estágio 3)");
         } else if (pad < 90 && pas >= 140) {
             System.out.println("Hípertensão sistólica isolada");
-        }
-
-
-            //IA codigo
-
-        if (pad >= 110 || pas >= 180) {
-            System.out.println("Hipertensão grave (Estágio 3)");
-        }
-        else if (pad >= 100 || pas >= 160) {
-            System.out.println("Hipertensão moderada (Estágio 2)");
-        }
-        else if (pad >= 90 || pas >= 140) {
-            System.out.println("Hipertensão leve (Estágio 1)");
-        }
-        else if (pad >= 85 || pas >= 130) {
-            System.out.println("Pressão arterial normal limítrofe");
-        }
-        else {
-            System.out.println("Pressão arterial normal");
         }
 
         sc.close();
