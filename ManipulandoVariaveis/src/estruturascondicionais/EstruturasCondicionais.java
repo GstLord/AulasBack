@@ -11,21 +11,20 @@ public class EstruturasCondicionais {
 
         Scanner sc = new Scanner(System.in);// importante para receber informações do teclado
 
-//        System.out.println("Digite sua idade");
+        System.out.println("Digite sua idade");
 //        int idade = scanner.nextInt();
-//        //if, else, if else
-//        if(idade <= 10){
-//            System.out.println("É uma criança!");
-//
-//             }else if(idade >= 12 && idade < 18) {
-//
-//            System.out.println("É um adolescente!");
-//
-//            }else if (idade >=18) {
-//
-//            System.out.println("É maior de idade!");
-//
-//        }
+        if (idade <= 10) {
+            System.out.println("É uma criança!");
+
+        } else if (idade >= 12 && idade < 18) {
+
+            System.out.println("É um adolescente!");
+
+        } else if (idade >= 18) {
+
+            System.out.println("É maior de idade!");
+
+        }
 
         //switch case
 
@@ -90,4 +89,5 @@ public class EstruturasCondicionais {
 //
 //
 //    }
+    }
 }
