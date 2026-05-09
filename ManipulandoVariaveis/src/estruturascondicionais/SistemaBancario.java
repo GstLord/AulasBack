@@ -75,7 +75,7 @@ public class SistemaBancario {
                     saldo = saldo - ValorDeposito;
 
 
-                    if (ValorDeposito > 2 || ValorDeposito < 1000) {
+                    if (ValorDeposito < 2 || ValorDeposito > 1000) {
                         System.out.println("Valor inválido");
                     }
 
