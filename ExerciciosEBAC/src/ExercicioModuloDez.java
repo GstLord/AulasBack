@@ -4,6 +4,7 @@ public class ExercicioModuloDez {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
+//-------------------------CRIAÇÃO DO VETOR EXERCICIO1--------------------------------------
         System.out.println("Defina o tamanho do Vetor");
         int tamanhoVet = sc.nextInt();
 
@@ -22,10 +23,47 @@ public class ExercicioModuloDez {
         ordenaVetor(vetor);
 
         exibeVetor(vetor);
+        System.out.println("\n");
+        sc.nextLine();
+//--------------------------ALTERAÇÃO DO VETOR EXERCICIO2---------------------------------------
+        for( int i=0; i < tamanhoVet; i++ ){
+           if(vetor[i] %2 == 0){
+               vetor[i] = vetor[i]*2;
+           }else {
+               vetor [i] = vetor[i]*vetor[i];
+           }
+        }
+        System.out.println("Vetor Alterado");
+        exibeVetor(vetor);
+
+//-------------------------CONTADOR DE VOGAIS EXERCICIO1-------------------------------------------
+        System.out.println("\n");
+        System.out.println("Digite um nome:");
+        String nome = sc.nextLine();
+
+        System.out.print("O nome " +  nome + " tem ");
+
+        int qtdVogais = 0;
+
+        for (int i=0; i<nome.length(); i++){
+            char letra = Character.toLowerCase(nome.charAt(i));
+
+            if(letra == 'a'|| letra =='e'|| letra =='i'|| letra =='o'|| letra =='u'){
+                qtdVogais ++;
+            }
+        }
+        System.out.println(qtdVogais + " vogais");
+
+//-----------------------------EXIBINDO O NOME INVERTIDO EXERCICIO3-----------------------------
+        int i = 0;
+        System.out.println("Nome informado invertido");
+        for ( i = nome.length()-1; i>=0; i--){
+            char letra = nome.charAt(i);
+            System.out.print(letra);
+        }
 
     }
-        //    77  66  33  24  64  23
-        //    i    j
+
 
     private static void ordenaVetor(int ... vetUsuario){
         for(int i = 0; i < vetUsuario.length; i++){
