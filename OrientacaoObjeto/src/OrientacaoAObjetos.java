@@ -74,6 +74,12 @@ Permite atender á mudanças nas especificações sem mexer em codigo ja pronto.
 É a capacidade que objetos de classes diferentes possuem de se comportarem de forma diferente em uma mesma operação. A estrutura(atributos)  de cada classe é diferente.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------MEMBROS ESTÁTICOS----------------------------------------------------------------------------------------------------
+
+Pertencem à classe, não a uma instância específica (objeto). Existem em memória desde o carregamento da classe, independente de quantos objetos
+forem criados, ou mesmo se nenhum objeto for criado.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
                     //L E M B R A R   D E   I M P O R T A R   A S   C L A S S E S
 import com.orientacaoobjetos.entity.Pessoa;
