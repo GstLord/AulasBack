@@ -89,8 +89,10 @@ import com.orientacaoobjetos.entity.Professor;
 public class OrientacaoAObjetos {
     public static void main(String[] args){//metodo
 
+        //USANDO CLASSES SEM ENCAPSULAMENTO
+
                     //esta guardado na memoria heap
-        Professor professor1 = new Professor();  //ISSO É UMA INSTANCIA, ESTOU INSTANCIANDO O OBJETO professor
+/*        Professor professor1 = new Professor();  //ISSO É UMA INSTANCIA, ESTOU INSTANCIANDO O OBJETO professor
         professor1.nome = "Gustavo";
         professor1.escola = "EBAC";
         professor1.idade = 23;
@@ -110,7 +112,7 @@ public class OrientacaoAObjetos {
         professor1.lecionarMateria();
         professor1.finalizarMateria();
         professor2.lecionarMateria();
-        professor2.finalizarMateria();
+        professor2.finalizarMateria(); */
 
         //CRIAÇÃO DE CLASSES USANDO ENCAPSULAMENTO
         Pessoa pessoa1 = new Pessoa("João", 30);
@@ -118,6 +120,8 @@ public class OrientacaoAObjetos {
 
         System.out.println(pessoa1);
         System.out.println(pessoa2);
+
+
 
     }
 }
