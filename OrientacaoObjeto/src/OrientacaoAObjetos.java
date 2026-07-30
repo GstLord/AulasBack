@@ -80,6 +80,17 @@ Pertencem à classe, não a uma instância específica (objeto). Existem em mem�
 forem criados, ou mesmo se nenhum objeto for criado.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------CONSTRUTORES-------------------------------------------------------------------------------------------------------
+
+Construtor é um metodo especial que possui o mesmo nome da classe e é executado automaticamente na criação de um objeto para inicializar seus atributos.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------POJO-------------------------------------------------------------------------------------------------------------
+
+Plain Old Java Object.
+POJO é uma classe Java simples usada para representar e armazenar dados, sem depender de frameworks ou regras especiais.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
                     //L E M B R A R   D E   I M P O R T A R   A S   C L A S S E S
 import com.orientacaoobjetos.entity.Pessoa;
@@ -120,6 +131,12 @@ public class OrientacaoAObjetos {
 
         System.out.println(pessoa1);
         System.out.println(pessoa2);
+
+        Professor professor1 = new Professor("carlos", 35);
+        professor1.setEscola("Unicesumar");
+        professor1.setMateria("POO");
+
+        System.out.println(professor1);
 
 
 

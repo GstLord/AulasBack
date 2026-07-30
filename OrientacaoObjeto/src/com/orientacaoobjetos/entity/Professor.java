@@ -1,17 +1,19 @@
 package com.orientacaoobjetos.entity;
 
+
 public class Professor {
     private String escola = "EBAC";
     private String nome = "Carlos";
     private String materia = "UX";
     private int idade;
 
-    public Professor(String nome, int idade, String escola, String materia){
+    //ISSO AQUI É UM CONSTRUTOR
+    public Professor(String nome, int idade){
         this.nome = nome;
         this.idade = idade;
         this.escola = escola;
         this.materia = materia;
-        validarIdade();
+
     }
 
     private void validarIdade(int idade) {
@@ -31,13 +33,27 @@ public class Professor {
 
 
     public String getEscola(){
+
         return escola;
     }
 
     public void setEscola(String escola){
+
         this.escola = escola;
+
     }
 
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
 
     @Override
     public String toString() {
