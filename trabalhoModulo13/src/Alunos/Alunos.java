@@ -4,16 +4,17 @@ public class Alunos {
 
     private String nome;
     private String turma;
-    private int[] nota;
+    private int[] notas;
     private int numeroProvas;
 
     public Alunos(String nome, String turma, int numeroProvas) {
         this.nome = nome;
         this.turma = turma;
         this.numeroProvas = numeroProvas;
-        this.nota = new int[numeroProvas];
+        this.notas = new int[numeroProvas];
     }
 
+    // Getters e Setters (padrão POJO)
     public String getNome() {
         return nome;
     }
@@ -34,37 +35,27 @@ public class Alunos {
         return numeroProvas;
     }
 
-    public int getNota(int indice) {
-        return nota[indice];
+    public int[] getNotas() {
+        return notas;
     }
 
-    public boolean setNota(int indice, int valor) {
-        if (valor < 0 || valor > 10) {
+    public boolean setNota(int indice, int nota) {
+        if (nota < 0 || nota > 10) {
             return false;
         }
-        this.nota[indice] = valor;
+        this.notas[indice] = nota;
         return true;
     }
 
+    /**
+     * Calcula a média das notas: soma de todas as notas dividido
+     * pela quantidade de provas.
+     */
     public double calcularMedia() {
         int soma = 0;
-        for (int i = 0; i < numeroProvas; i++) {
-            soma += nota[i];
+        for (int nota : notas) {
+            soma += nota;
         }
         return (double) soma / numeroProvas;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder notas = new StringBuilder();
-        for (int i = 0; i < numeroProvas; i++) {
-            notas.append(nota[i]);
-            if (i < numeroProvas - 1) {
-                notas.append(", ");
-            }
-        }
-        return "Aluno: " + nome + " | Turma: " + turma +
-                " | Notas: [" + notas + "]" +
-                " | Media: " + String.format("%.2f", calcularMedia());
     }
 }
